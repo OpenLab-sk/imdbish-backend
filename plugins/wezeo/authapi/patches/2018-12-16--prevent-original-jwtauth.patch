@@ -1,0 +1,25 @@
+ plugins/vdomah/jwtauth/routes.php | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/plugins/vdomah/jwtauth/routes.php b/plugins/vdomah/jwtauth/routes.php
+index 7026a630..8b58409c 100644
+--- a/plugins/vdomah/jwtauth/routes.php
++++ b/plugins/vdomah/jwtauth/routes.php
+@@ -2,6 +2,12 @@
+ 
+ use RainLab\User\Models\User as UserModel;
+ 
++/*
++	
++	2018-12-16: COMMENTED OUT BY WEZEO/AUTHAPI
++	- we use our own api, so we have to disable the original one
++
++
+ Route::group(['prefix' => 'api'], function() {
+ 
+     Route::post('login', function (Request $request) {
+@@ -97,3 +103,4 @@ Route::group(['prefix' => 'api'], function() {
+         return Response::json(compact('token', 'user'));
+     });
+ });
++*/
