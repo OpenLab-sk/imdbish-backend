@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Movie
+
+# Model Form Field configuration
+form: $/jules/movies/models/movie/fields.yaml
+
+# Model Class name
+modelClass: Jules\Movies\Models\Movie
+
+# Default redirect location
+defaultRedirect: jules/movies/movies
+
+# Create page
+create:
+    title: Create Movie
+    redirect: jules/movies/movies/update/:id
+    redirectClose: jules/movies/movies
+
+# Update page
+update:
+    title: Edit Movie
+    redirect: jules/movies/movies
+    redirectClose: jules/movies/movies
+
+# Preview page
+preview:
+    title: Preview Movie
