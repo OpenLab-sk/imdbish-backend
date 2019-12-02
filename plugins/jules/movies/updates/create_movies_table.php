@@ -14,6 +14,11 @@ class CreateMoviesTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->timestamps();
+
+            $table->string('name');
+            $table->string('director');
+            $table->string('year');
+            $table->string('description');
         });
     }
 
