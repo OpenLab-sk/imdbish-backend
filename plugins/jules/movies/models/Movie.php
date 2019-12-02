@@ -1,4 +1,6 @@
-<?php namespace Jules\Movies\Models;
+<?php
+
+namespace Jules\Movies\Models;
 
 use Model;
 
@@ -22,7 +24,7 @@ class Movie extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    protected $fillable = ['name', 'description', 'year', 'director'];
 
     /**
      * @var array Validation rules for attributes
