@@ -6,3 +6,15 @@ columns:
     id:
         label: ID
         searchable: true
+    name:
+        label: name
+        searchable: true
+    director:
+        label: director
+        searchable: true
+    year:
+        label: year
+        searchable: true
+    description:
+        label: description
+        searchable: true

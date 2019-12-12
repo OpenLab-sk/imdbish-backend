@@ -34,6 +34,19 @@ class SeedUsersTable extends Seeder
         'description' =>
         "Aliqua pariatur dolore dolore tempor "
 
+      ],
+      [
+        'id' => 3,
+
+        'created_at' => "2019-07-02 10:34:22",
+        'updated_at' => "2019-07-02 10:34:22",
+
+        'name' => "Inception",
+        'director' => "Christopher Nolan",
+        'year' => "2012",
+        'description' =>
+        "Aliqua pariatur dolore dolore tempor "
+
       ]
     ];
 

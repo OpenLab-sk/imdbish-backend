@@ -24,6 +24,7 @@ class Movie extends Model
     /**
      * @var array Fillable fields
      */
+    // protected $fillable = [];
     protected $fillable = ['name', 'description', 'year', 'director'];
 
     /**
