@@ -2,6 +2,8 @@
 
 use Jules\Movies\Models\Movie;
 
+$auth = '\Tymon\JWTAuth\Middleware\GetUserFromToken';
+
 Route::get('/movies', function () {
   return Movie::all();
 });
@@ -11,6 +13,7 @@ Route::get('/movies/{id}', function ($id) {
 });
 
 Route::post('/movies', function () {
+
   $movie = new Movie;
 
   $movie->name = Input::get('name');
@@ -19,7 +22,7 @@ Route::post('/movies', function () {
   $movie->description = Input::get('description');
 
   $movie->save();
-});
+})->middleware($auth);
 
 Route::patch('/movies/{id}', function ($id) {
   // Find movie to update
